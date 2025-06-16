@@ -37,11 +37,38 @@
                     alt="Delicious Food">
             </div>
         </div>
+        <!-- Image Carousel Section -->
+        <section class="mt-20 w-[90%] mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Popular Dishes</h2>
+
+            <div class="carousel w-full rounded-box" id="imageCarousel">
+                <div id="img1" class="carousel-item w-full justify-center">
+                    <img class="w-[90%] max-h-[400px] object-cover rounded-xl"
+                        src="https://source.unsplash.com/featured/?food1" alt="Dish 1" />
+                </div>
+                <div id="img2" class="carousel-item w-full justify-center">
+                    <img class="w-[90%] max-h-[400px] object-cover rounded-xl"
+                        src="https://source.unsplash.com/featured/?food2" alt="Dish 2" />
+                </div>
+                <div id="img3" class="carousel-item w-full justify-center">
+                    <img class="w-[90%] max-h-[400px] object-cover rounded-xl"
+                        src="https://source.unsplash.com/featured/?food3" alt="Dish 3" />
+                </div>
+                <div id="img4" class="carousel-item w-full justify-center">
+                    <img class="w-[90%] max-h-[400px] object-cover rounded-xl"
+                        src="https://source.unsplash.com/featured/?food4" alt="Dish 4" />
+                </div>
+            </div>
+        </section>
 
 
-        <!-- Review Cards -->
-        <!-- Review Section -->
-        <!-- Review Section with Auto-Sliding Carousel -->
+        <div class="flex justify-center  items-center bg-gray-100">
+            <button
+                class="px-6 py-3 bg-blue-500 text-black font-semibold rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:from-orange-100 hover:to-red-500 animate-pulse">
+                Hover Me
+            </button>
+        </div>
+
         <section class="mt-20 w-[90%] mx-auto">
             <h2 class="text-3xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
 
@@ -105,7 +132,7 @@
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" class="mask mask-star-2 bg-orange-400" checked/>
+                            <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                         </div>
                     </div>
@@ -128,13 +155,13 @@
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" class="mask mask-star-2 bg-orange-400" checked/>
+                            <input type="radio" class="mask mask-star-2 bg-orange-400" checked />
                         </div>
                     </div>
                 </div>
             </div>
 
-          
+
         </section>
 
         <!-- JavaScript for Auto Slide -->
@@ -150,7 +177,7 @@
         setInterval(() => {
             index = (index % totalSlides) + 1;
             window.location.hash = `#item${index}`;
-        }, 4000); // Change slide every 4 seconds
+        }, 4000); 
     </script>
 </body>
 
